@@ -6,7 +6,7 @@ module.exports = {
  mode: 'development',
  entry: {
    polyfills: path.resolve(__dirname, './polyfills.ts'),
-   app: path.resolve(__dirname, './app.ts'),
+   app: path.resolve(__dirname, './app.module.ts'),
  },
  output: {
    path: path.resolve(__dirname, './dist'),
