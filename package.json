@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A minimal boilerplate for angular",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/nishant-jain-94/ng-boilerplate"
+  },
   "author": "Nishant Jain",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js",
