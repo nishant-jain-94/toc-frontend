@@ -1,0 +1,33 @@
+{
+  "name": "ng-boilerplate",
+  "version": "1.0.0",
+  "description": "A minimal boilerplate for angular",
+  "main": "index.js",
+  "author": "Nishant Jain",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js",
+    "build": "webpack"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/http": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "@angular/router": "^5.2.9",
+    "@types/node": "^9.4.7",
+    "core-js": "^2.5.3",
+    "rxjs": "^5.5.7",
+    "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^4.0.1",
+    "html-webpack-plugin": "^3.0.6",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
