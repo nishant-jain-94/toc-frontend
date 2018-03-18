@@ -66,20 +66,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./app.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./app.module.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./app.ts":
-/*!****************!*\
-  !*** ./app.ts ***!
-  \****************/
+/***/ "./app.component.ts":
+/*!**************************!*\
+  !*** ./app.component.ts ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {\n    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;\n    if (typeof Reflect === \"object\" && typeof Reflect.decorate === \"function\") r = Reflect.decorate(decorators, target, key, desc);\n    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;\n    return c > 3 && r && Object.defineProperty(target, key, r), r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar core_1 = __webpack_require__(/*! @angular/core */ \"./node_modules/@angular/core/esm5/core.js\");\nvar platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ \"./node_modules/@angular/platform-browser/esm5/platform-browser.js\");\nvar platform_browser_dynamic_1 = __webpack_require__(/*! @angular/platform-browser-dynamic */ \"./node_modules/@angular/platform-browser-dynamic/esm5/platform-browser-dynamic.js\");\nvar HelloWorldComponent = /** @class */ (function () {\n    function HelloWorldComponent() {\n    }\n    HelloWorldComponent = __decorate([\n        core_1.Component({\n            selector: 'hello-world',\n            template: '<h1>Hello World</h1>'\n        })\n    ], HelloWorldComponent);\n    return HelloWorldComponent;\n}());\nvar AppModule = /** @class */ (function () {\n    function AppModule() {\n    }\n    AppModule = __decorate([\n        core_1.NgModule({\n            declarations: [\n                HelloWorldComponent\n            ],\n            imports: [\n                platform_browser_1.BrowserModule\n            ],\n            bootstrap: [HelloWorldComponent]\n        })\n    ], AppModule);\n    return AppModule;\n}());\nexports.AppModule = AppModule;\nplatform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(AppModule)\n    .catch(function (err) { return console.log(\"Error\"); });\n\n\n//# sourceURL=webpack:///./app.ts?");
+eval("\nvar __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {\n    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;\n    if (typeof Reflect === \"object\" && typeof Reflect.decorate === \"function\") r = Reflect.decorate(decorators, target, key, desc);\n    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;\n    return c > 3 && r && Object.defineProperty(target, key, r), r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar core_1 = __webpack_require__(/*! @angular/core */ \"./node_modules/@angular/core/esm5/core.js\");\nvar AppComponent = /** @class */ (function () {\n    function AppComponent() {\n    }\n    AppComponent = __decorate([\n        core_1.Component({\n            selector: \"app\",\n            template: \"<h1>Hello World</h1>\",\n        })\n    ], AppComponent);\n    return AppComponent;\n}());\nexports.AppComponent = AppComponent;\n\n\n//# sourceURL=webpack:///./app.component.ts?");
+
+/***/ }),
+
+/***/ "./app.module.ts":
+/*!***********************!*\
+  !*** ./app.module.ts ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {\n    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;\n    if (typeof Reflect === \"object\" && typeof Reflect.decorate === \"function\") r = Reflect.decorate(decorators, target, key, desc);\n    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;\n    return c > 3 && r && Object.defineProperty(target, key, r), r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar core_1 = __webpack_require__(/*! @angular/core */ \"./node_modules/@angular/core/esm5/core.js\");\nvar platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ \"./node_modules/@angular/platform-browser/esm5/platform-browser.js\");\nvar platform_browser_dynamic_1 = __webpack_require__(/*! @angular/platform-browser-dynamic */ \"./node_modules/@angular/platform-browser-dynamic/esm5/platform-browser-dynamic.js\");\nvar app_component_1 = __webpack_require__(/*! ./app.component */ \"./app.component.ts\");\nvar AppModule = /** @class */ (function () {\n    function AppModule() {\n    }\n    AppModule = __decorate([\n        core_1.NgModule({\n            bootstrap: [app_component_1.AppComponent],\n            declarations: [\n                app_component_1.AppComponent,\n            ],\n            imports: [\n                platform_browser_1.BrowserModule,\n            ],\n        })\n    ], AppModule);\n    return AppModule;\n}());\nexports.AppModule = AppModule;\nplatform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(AppModule);\n\n\n//# sourceURL=webpack:///./app.module.ts?");
 
 /***/ }),
 

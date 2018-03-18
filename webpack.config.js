@@ -17,6 +17,9 @@ module.exports = {
      { test: /\.ts/, use: 'awesome-typescript-loader' }
    ]
  },
+ resolve: {
+  extensions: [".js", ".ts"],
+ },
  plugins: [
    new webpack.ContextReplacementPlugin(
     /angular(\\|\/)core(\\|\/)/, path.resolve(__dirname, './src')
