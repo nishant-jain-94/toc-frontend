@@ -9,5 +9,5 @@ A minimal boilerplate for Angular 5 using Webpack
 yarn build
 
 # Builds and runs angular application
-yarn run
+yarn start
 ```
