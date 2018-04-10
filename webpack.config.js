@@ -1,13 +1,16 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+const UglifyJSPlugin = require('uglify-js-plugin');
 
 module.exports = {
- mode: 'development',
+ mode: 'production',
+ context: path.resolve(__dirname, './src'),
  entry: {
-   polyfills: path.resolve(__dirname, './polyfills.ts'),
+   polyfills: './polyfills.ts',
    styles: './styles.css',
-   app: path.resolve(__dirname, './app.module.ts'),
+   app: './main.ts',
  },
  output: {
    path: path.resolve(__dirname, './dist'),
@@ -30,6 +33,14 @@ module.exports = {
    new HtmlWebpackPlugin({
      title: 'Ng Boilerplate',
      template: 'index.html'
-   })
+   }),
+   new CompressionPlugin(
+    {
+      test: /\.js|\.html/,
+      asset: '[path].gz[query]',
+      cache: true,
+      deleteOriginalAssets: true,
+    }
+  ),
   ]
 };

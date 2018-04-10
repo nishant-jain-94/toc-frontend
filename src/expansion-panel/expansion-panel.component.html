@@ -1,0 +1,17 @@
+<mat-accordion>
+  <mat-expansion-panel (opened)="onOpened()" (closed)="onClosed()">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{pseudoNode?.name}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ng-template matExpansionPanelContent>
+      {{ pseudoNode?.link }}
+      <expansion-panel *ngFor="let child of pseudoNode?.children" [id]="id" [path]="child"></expansion-panel>
+    </ng-template>
+    {{pseudoNode?.childrenLength}}
+    <mat-action-row *ngIf="pseudoNode?.childrenLength > 0">
+      <button mat-button (click)="onMore()">More ...</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
