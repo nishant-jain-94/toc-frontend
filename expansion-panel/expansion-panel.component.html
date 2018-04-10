@@ -1,0 +1,10 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{node.name}}
+    </mat-panel-title>
+    <ng-template matExpansionPanelContent>
+      <expansion-panel *ngFor="let child of node.children" [id]="id" [path]="child"></expansion-panel>
+    </ng-template>
+  </mat-expansion-panel-header>
+</mat-expansion-panel>

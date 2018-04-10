@@ -1,7 +1,8 @@
-import {Component} from "@angular/core";
+import { Component } from "@angular/core";
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 
 @Component({
   selector: "app",
-  template: "<h1>Hello World</h1>",
+  templateUrl: "./app.component.html",
 })
 export class AppComponent { }
