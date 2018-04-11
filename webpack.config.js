@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const UglifyJSPlugin = require('uglify-js-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
  mode: 'production',
@@ -34,13 +34,6 @@ module.exports = {
      title: 'Ng Boilerplate',
      template: 'index.html'
    }),
-   new CompressionPlugin(
-    {
-      test: /\.js|\.html/,
-      asset: '[path].gz[query]',
-      cache: true,
-      deleteOriginalAssets: true,
-    }
-  ),
+   new BundleAnalyzerPlugin(),
   ]
 };
